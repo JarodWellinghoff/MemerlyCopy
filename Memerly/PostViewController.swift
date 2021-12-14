@@ -42,6 +42,8 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 		   let imageData = memeImageView.image!.pngData()
 		   let file = PFFileObject(name: "image.png", data: imageData!)
 
+		    
+
 		   post["image"] = file
 
 		   post.saveInBackground { (success,error) in
